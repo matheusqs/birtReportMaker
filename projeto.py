@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import xml.etree.cElementTree as ET
 
 def createStandardReport():
@@ -87,7 +88,7 @@ def createStandardReportPageSetupSimpleMasterPagePageFooterTextProperty(text):
 
 def getReportName():
     reportName = []
-    reportName.append(input("Qual será o nome do relatório: "))
+    reportName.append(raw_input("Qual será o nome do relatório: "))
     reportName.append(".rptdesign")
     reportName = ''.join(reportName)
     return reportName
